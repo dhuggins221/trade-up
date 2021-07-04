@@ -1,0 +1,30 @@
+{{#if posts.length}}
+<section>
+  <h2>My Trades</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+<div>
+  <a href="dashboard/create-trade" class="createTrade-Btn">
+    Add New Trade
+  </a>
+</div>
+
+{{#if offers.length}}
+<section>
+  <h2>My Offers</h2>
+  <ol>
+    {{#each offers as |post|}}
+    <li>
+      {{> post-info post}}
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}

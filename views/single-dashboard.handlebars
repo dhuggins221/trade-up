@@ -1,0 +1,56 @@
+<button type="button" class="delete-post-btn">Delete Trade</button>
+{{> post-info post}}
+
+{{#if loggedIn}}
+  {{#if anyOffer}}
+    <div>
+      <h2>Offers</h2>
+    </div>
+<<<<<<< HEAD
+    <div id=offer-area>
+      {{#each offers}}
+
+        {{description}}
+        {{> comments comments}}
+        <form class="comment-form" data-offer-id={{id}}>
+          <div>
+            <input type="text" id="comment-body"/>
+          </div>
+
+          <div>
+            <button type="submit" >add comment</button>
+          </div>
+        </form>
+      {{/each}}
+    </div>
+  {{/if}}
+{{/if}}
+
+=======
+
+    <div>
+      <button type="submit" >Add Comment</button>
+    </div>
+  </form>
+{{/each}}
+
+
+{{/if}}
+{{/if}}
+
+<button type="button" class="delete-post-btn"> Delete post</button>
+
+<script src="/javascript/delete-post.js"></script>
+
+>>>>>>> 99da2ad9b9c5717da40ab0b8bc8f4fb94f001372
+{{#if loggedIn}}
+  {{#if anyOffer}}
+    <script src="/javascript/comment.js"></script>
+  {{/if}}
+{{/if}}
+<<<<<<< HEAD
+
+<script src="/javascript/delete-post.js"></script>
+=======
+{{/if}}
+>>>>>>> 99da2ad9b9c5717da40ab0b8bc8f4fb94f001372
